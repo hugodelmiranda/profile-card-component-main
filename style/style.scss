@@ -1,0 +1,158 @@
+@import url(reset.css);
+
+//font
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+// Colors
+
+// Primary
+
+$darkCyan: hsl(185, 75%, 39%);
+$veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+$darkGrayishBlue: hsl(227, 10%, 46%);
+
+//Neutral
+$darkGray: hsl(0, 0%, 59%);
+
+.attribution {
+  margin-top: 50px;
+  font-size: 11px;
+  text-align: center;
+  color: $veryDarkDesaturatedBlue;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 18px;
+  background-color: $darkCyan;
+  width: 100vw;
+  height: 100vh;
+}
+
+#bg-top {
+  position: absolute;
+  top: -550px;
+  left: -328px;
+}
+
+#bg-bottom {
+  position: absolute;
+  bottom: -685px;
+  right: -270px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardContainer {
+  background-color: #ffffff;
+  border-radius: 15px;
+  max-width: fit-content;
+  box-shadow: 0 40px 60px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.row {
+  padding: 0 40px;
+  text-align: center;
+}
+
+header {
+  position: relative;
+}
+
+#cardImages {
+  img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+  }
+}
+
+#avatar {
+  img {
+    border: 5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -50px;
+    left: 0%;
+    right: 0;
+    margin: auto;
+  }
+}
+
+main {
+  margin-top: 80px;
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: $veryDarkDesaturatedBlue;
+
+    span {
+      font-weight: 300;
+      color: $darkGray;
+    }
+  }
+  p {
+    margin-top: 10px;
+    color: $darkGray;
+    line-height: 26px;
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  .card-status {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    color: $darkGray;
+    line-height: 26px;
+    font-size: 12px;
+    font-weight: 300;
+
+    span {
+      font-size: 20px;
+      font-weight: 700;
+      color: $veryDarkDesaturatedBlue;
+    }
+  }
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #efefef;
+  margin: 30px -40px 0 -40px;
+}
+
+@media only screen and (max-width: 376px) {
+  #bg-top {
+    top: -700px;
+    left: -728px;
+  }
+
+  #bg-bottom {
+    bottom: -695px;
+    right: -715px;
+  }
+}
+
+@media only screen and (min-width: 376px) {
+  body {
+  }
+}
